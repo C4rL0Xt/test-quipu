@@ -1,3 +1,4 @@
+/*
 .catalogo-container {
     width: 1366px;
     height: 768px;
@@ -311,4 +312,33 @@
     width: 20px;
     height: 20px;
 
+} */
+
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    border: 1px red solid;
+    height: 89%;
+}
+
+.sidebar {
+    border: 1px blue solid;
+    width: 200px;
+}
+
+.info {
+    border: 1px yellow solid;
+    width: calc(100% - 200px);
+}
+
+.footer {
+    height: 11%;
+    border: 1px green solid;
 }

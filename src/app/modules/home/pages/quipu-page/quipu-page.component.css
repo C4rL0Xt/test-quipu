@@ -14,13 +14,13 @@
 
 .sidebar-content {
     display: flex;
-    width: 14%;
-
+    width: 257px;
+    border: 1px blue solid;
 }
 
 .info-artist {
-    width: 86%;
-
+    width: calc(100% - 257px);
+    border: 1px yellow solid;
     display: flex;
 }
 
@@ -29,6 +29,13 @@
     height: 11%;
 
 }
+
+@media (max-width: 946px) {
+    .sidebar-content{
+        display: none;
+    }
+}
+/*
 
 @media (max-width: 1669px) {
     .sidebar-content {
@@ -50,3 +57,4 @@
     gap: 8px;
   }
 
+*/
