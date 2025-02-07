@@ -1,0 +1,98 @@
+.barra-control-container {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #33A5CC;
+}
+
+.barra-control-imagen {
+    width: 100px;
+}
+
+.barra-control-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-control-detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.barra-control-detalles-name {
+    font-family: "Quicksand", serif;
+    font-size: 16px;
+    color: white;
+}
+
+.barra-control-detalles-singer {
+    font-family: "Quicksand", serif;
+    font-size: 12px;
+    color: white;
+}
+
+.barra-control-controles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    width: 124px;
+}
+
+
+.icon-skip {
+    color: white;
+    font-size: 30px;
+}
+
+.icon-volume{
+    color: white;
+    font-size: 30px;
+}
+
+.play {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle {        
+    color: white;
+    font-size: 40px;
+}
+  
+
+.barra-control-sound {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.barra-control-sound-barra {
+    width: 100px;
+    background-color: white;
+    height: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-control-sound-circle {
+    background-color: white;
+    border-radius: 50px;
+    border: 1px wheat solid;
+    width: 20px;
+    height: 20px;
+
+}

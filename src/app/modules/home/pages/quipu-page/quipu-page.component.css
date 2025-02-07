@@ -1,0 +1,52 @@
+.catalogo-container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenido-container {
+    height: 89%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-content {
+    display: flex;
+    width: 14%;
+
+}
+
+.info-artist {
+    width: 86%;
+
+    display: flex;
+}
+
+
+.barra-control-container {
+    height: 11%;
+
+}
+
+@media (max-width: 1669px) {
+    .sidebar-content {
+
+        width: 18%;
+    }
+    
+    .info-artist {
+        width: 82%;
+    }
+}
+
+
+.layout {
+    height: 89%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20% 80%;
+    gap: 8px;
+  }
+

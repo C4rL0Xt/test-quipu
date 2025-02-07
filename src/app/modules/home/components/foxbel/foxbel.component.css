@@ -1,0 +1,314 @@
+.catalogo-container {
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-container {
+    height: 668px;
+    display: flex;
+    flex-direction: row;
+}
+
+.barra-navegacion-container {
+    width: 270px;
+    background-color: #195266;
+
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.barra-navegacion-logo {
+    width: 250px;
+    height: 59px;
+    margin-top: 50px;
+}
+
+.barra-navegacion-title {
+    width: auto;
+    height: 28px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    
+    font-style: bold;
+    color: white;
+
+    margin-top: 30px;
+}
+
+.barra-navegacion-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+}
+
+.barra-navegacion-option {
+    width: auto;
+    height: 20px;
+    font-family: "Quicksand", serif;
+    font-size: 16px;
+    color: white;
+}
+
+.info-container {
+    width: 1096px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    row-gap: 20px;
+}
+
+.info-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.info-container-header-buscador_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px #99D2E5 solid;
+    border-radius: 15px;
+    width: 400px;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.info-container-header-buscador {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Quicksand", serif;
+    font-weight: 600;
+    color: #203152;
+    border: none;
+}
+
+.info-container-header-buscador:focus {
+    outline: none;
+    border: none;
+}
+
+.info-container-header-perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.user-icon {
+    color: #33A5CC;
+}
+
+
+.info-container-album-info {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: #EEF7FA;
+}
+
+.info-container-album-info-imagen_container {
+    position: relative;
+}
+
+.info-container-album-info-imagen{ 
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.info-container-album-info-detalles {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.triangle-big {
+    position: absolute;
+    color: white;
+    font-size: 150px;
+    top: 20%;
+    left: 20%;
+    translate: (-50%,-50%);
+}
+.info-container-album-info-detalles-singer_name {
+    font-family: "Quicksand", serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.info-container-album-info-detalles-singer_info {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    font-family: "Quicksand", serif;
+}
+
+.info-container-album-info-detalles-singer_info-seguidores{
+    color: #33A5CC;
+}
+
+.info-container-album-info-detalles-singer_data {
+    font-family: "Quicksand", serif;
+}
+
+.info-container-album-info-detalles-buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.button-reproducir {
+    background-color: #33A5CC;
+    border-radius: 15px;
+    color: white;
+    border: 1px #33A5CC solid;
+    width: 136px;
+    height: 38px;
+    font-size: 16px;
+}
+
+.button-follow {
+    border: 1px #33A5CC solid;
+    background-color: white;
+    border-radius: 15px;
+    color: #33A5CC;
+    width: 99px;
+    height: 38px;
+    font-size: 16px;
+}
+
+.button-more {
+    border: none;
+    background: none;
+}
+
+.button-more span {
+    color: black;
+}
+
+.button-follow, .button-reproducir, .button-more:hover {
+    cursor: pointer;
+}
+
+.info-container-adicional-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.info-container-adicional-info-title{
+    color:  #33A5CC;
+    font-size: 21px;
+    font-family: "Quicksand", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.barra-control-container {
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    background-color: #33A5CC;
+}
+
+.barra-control-imagen {
+    width: 100px;
+}
+
+.barra-control-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-control-detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.barra-control-detalles-name {
+    font-family: "Quicksand", serif;
+    font-size: 16px;
+    color: white;
+}
+
+.barra-control-detalles-singer {
+    font-family: "Quicksand", serif;
+    font-size: 12px;
+    color: white;
+}
+
+.barra-control-controles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    width: 124px;
+}
+
+
+.icon-color {
+    color: white;
+}
+
+.play {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle {        
+    color: white;
+    font-size: 40px;
+}
+  
+
+.barra-control-sound {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.barra-control-sound-barra {
+    width: 100px;
+    background-color: white;
+    height: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-control-sound-circle {
+    background-color: white;
+    border-radius: 50px;
+    border: 1px wheat solid;
+    width: 20px;
+    height: 20px;
+
+}

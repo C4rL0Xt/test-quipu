@@ -1,0 +1,77 @@
+<div class="catalogo-container">
+    <div class="contenido-container">
+        <div class="barra-navegacion-container">
+            <img class="barra-navegacion-logo" src="assets/images/quipu_logo.png">
+            <h1 class="barra-navegacion-title">Mi Librería</h1>
+            <div class="barra-navegacion-options" *ngFor="let option of options">
+                <div class="barra-navegacion-option">{{option}}</div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="info-container-header">
+                <div class="info-container-header-buscador_container">
+                    <input class="info-container-header-buscador" type="text" placeholder="Buscar">
+                    <span class="material-icons">search</span>
+                </div>
+                <div class="info-container-header-perfil">
+                    <span class="material-icons user-icon">person</span> Arthur Fleck
+                </div>
+            </div>
+            <div class="info-container-album-info">
+                <div class="info-container-album-info-imagen_container">
+                    <img class="info-container-album-info-imagen" src="assets/images/adele.png" alt="">
+                    <span class="material-icons triangle-big">play_arrow</span>
+                </div>
+                <div class="info-container-album-info-detalles">
+                    <div class="info-container-album-info-detalles-singer_name">
+                        Adele 21
+                    </div>
+                    <div class="info-container-album-info-detalles-singer_info">
+                        Lo mejor de Adele
+                        <p class="info-container-album-info-detalles-singer_info-seguidores">
+                            321, 123 seguidores
+                        </p>
+                    </div> 
+                    <p class="info-container-album-info-detalles-singer_data">
+                        Adele Laurie Blue Adkins (Tottenham, Londres, Inglaterra, 5 de mayo de 1988), 
+                        conocida simplemente como Adele, es una cantante, compositora y multinstrumentista británica.
+                    </p>
+                    <div class="info-container-album-info-detalles-buttons">
+                        <button class="button-reproducir"> Reproducir</button>
+                        <button class="button-follow">Seguir </button>
+                        <button class="button-more"><span class="material-icons icon-color">more_horiz</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container-adicional-info">
+                <h1 class="info-container-adicional-info-title">Resultados</h1>
+                <div class="info-container-adicional-info-resultado">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barra-control-container">
+        <img class="barra-control-imagen" src="assets/images/adele.png">
+        <div class="barra-control-info">
+            <div class="barra-control-detalles">
+                <div class="barra-control-detalles-name">Someone like you</div>
+                <div class="barra-control-detalles-singer">Adele - 21</div>
+            </div>
+            <div class="barra-control-controles">
+                <span class="material-icons icon-color">skip_previous</span>
+                <div class="play">
+                    <span class="material-icons triangle">play_arrow</span>
+                </div>
+                <span class="material-icons icon-color">skip_next</span>
+            </div>
+            <div class="barra-control-sound">
+                <div class="barra-control-sound-barra">
+                    <div class="barra-control-sound-circle"></div>
+                </div>
+                
+                <span class="material-icons icon-color">volume_up</span>
+            </div>
+        </div>
+    </div>
+</div>
