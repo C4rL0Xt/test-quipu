@@ -1,23 +1,28 @@
-<div class="barra-control-container">
-    <img class="barra-control-imagen" src="assets/images/adele.png">
-    <div class="barra-control-info">
-        <div class="barra-control-detalles">
-            <div class="barra-control-detalles-name">Someone like you</div>
-            <div class="barra-control-detalles-singer">Adele - 21</div>
+<div class="reproductor flex-row bg-color-primary">
+    <figure class="reproductor_figure flex-row">
+        <div class="reproductor_figure_container">
+            <img class="reproductor_figure_container_imagen height-100 width-100" src="assets/images/adele.png">
         </div>
-        <div class="barra-control-controles">
-            <span class="material-icons icon-skip">skip_previous</span>
-            <div class="play">
-                <span class="material-icons triangle">play_arrow</span>
+        <figcaption class="reproductor_figure_caption flex-column">
+            <h2 class="reproductor_figure_caption_title color-terciary font-secondary">Someone like you</h2>
+            <p class="reproductor_figure_caption_description color-terciary font-terciary">Adele - 21</p>
+        </figcaption>
+    </figure>
+    <main class="reproductor_control flex-row">
+
+        <section class="reproductor_control_controles flex-row justify-align-center">
+            <span class="material-icons reproductor_control_controles-skip color-terciary">skip_previous</span>
+            <div class="reproductor_control_controles-play flex-row justify-align-center">
+                <span class="material-icons reproductor_control_controles-play-triangle color-terciary">play_arrow</span>
             </div>
-            <span class="material-icons icon-skip">skip_next</span>
-        </div>
-        <div class="barra-control-sound">
-            <div class="barra-control-sound-barra">
-                <div class="barra-control-sound-circle"></div>
+            <span class="material-icons  reproductor_control_controles-skip color-terciary">skip_next</span>
+        </section>
+
+        <section class="reproductor_control_sound flex-row">
+            <div class="reproductor_control_sound-barra bg-color-terciary flex-row justify-align-center">
+                <div class="reproductor_control_sound-circle bg-color-terciary color-terciary"></div>
             </div>
-            
-            <span class="material-icons icon-volume">volume_up</span>
-        </div>
-    </div>
+            <span class="material-icons reproductor_control_sound-volume color-terciary">volume_up</span>
+        </section>
+    </main>
 </div>

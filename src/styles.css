@@ -1,4 +1,214 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Quicksand", serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+  --color-font-primary: #33a5cc;
+  --color-font-secondary: #195266;
+  --color-font-terciary: white;
+  --color-bg-primary: #33a5cc;
+  --color-bg-secondary: #195266;
+  --color-bg-terciary: white;
+}
+
+.total {
+  color: red;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-primary {
+  color: var(--color-font-primary);
+}
+
+.color-secondary {
+  color: var(--color-font-secondary);
+}
+
+.color-terciary {
+  color: var(--color-font-terciary);
+}
+
+.bg-color-primary {
+  background-color: var(--color-bg-primary);
+}
+
+.bg-color-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.bg-color-terciary {
+  background-color: var(--color-bg-terciary);
+}
+
+.font-primary {
+  font-size: clamp(1.5rem, 1.2vw, 2rem);
+  font-weight: 500;
+}
+
+.font-secondary {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.font-terciary {
+  font-size: clamp(0.4rem, 1vw, 1rem);
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.catalogo {
+  height: 100vh;
+  position: relative;
+}
+
+.catalogo_contenido {
+  flex-grow: 1;
+}
+
+.catalogo_contenido_information {
+  flex-grow: 1;
+  flex-shrink: 10;
+  overflow-y: auto;
+}
+
+.catalogo_reproductor {
+  bottom: 0;
+  width: 100%;
+  position: sticky;
+}

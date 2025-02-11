@@ -1,7 +1,13 @@
-<div class="barra-navegacion-container">
-    <img class="barra-navegacion-logo" src="assets/images/quipu_logo.png">
-    <h1 class="barra-navegacion-title">Mí Librería</h1>
-    <div class="barra-navegacion-options" *ngFor="let option of options">
-        <div class="barra-navegacion-option">{{option}}</div>
-    </div>
-</div>
+<main class="sidebar bg-color-secondary flex-column height-100">
+    <figure class="sidebar_figure">
+         <img class="sidebar_figure_logo width-100" src="assets/images/quipu_logo.png">
+    </figure>
+    <h2 class="sidebar_title color-terciary  font-primary">Mí Librería</h2>
+    <nav class="sidebar_nav flex-column">
+        <ul class="sidebar_nav_list flex-column">
+            <li class="sidebar_nav_list-option color-terciary font-secondary" *ngFor="let option of options">
+                <p href="/test">{{option}}</p>
+            </li>
+        </ul>
+    </nav>
+</main>

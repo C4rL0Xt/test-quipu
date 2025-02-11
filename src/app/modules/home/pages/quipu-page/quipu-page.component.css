@@ -1,34 +1,8 @@
-.catalogo-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 
-  
+@media (max-width: 1000px) {
+    .catalogo_contenido_sidebar {
+        display: none;
+    }
 }
 
-.contenido-container {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 3;
-}
-
-.sidebar-content {
-    flex-grow: 1;
-    flex-shrink: 3;
-
-}
-
-.info-artist {
-    flex-grow: 16;
-    flex-shrink: 1;
-
- 
-}
-
-
-.barra-control-container {
-
-
-}
 

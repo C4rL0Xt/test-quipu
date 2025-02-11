@@ -1,138 +1,118 @@
-.info-container {
-  
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.information {
     row-gap: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
+    padding: 30px;
 
 }
 
-.info-container-header {
-    display: flex;
-    flex-direction: row;
+.information_header {
     justify-content: space-between;
-
+    column-gap: 5px;
 }
 
-.info-container-header-buscador_container {
-    display: flex;
+.information_header_buscador {
     align-items: center;
-    justify-content: space-between;
     border: 1px #99D2E5 solid;
     border-radius: 15px;
-    width: 400px;
     height: 38px;
     padding-left: 10px;
     padding-right: 10px;
+    flex-grow: 1;
+    flex-shrink: 3;
     
 }
 
-.info-container-header-buscador {
-    width: 100%;
-    font-size: 16px;
-    font-family: "Quicksand", serif;
-    font-weight: 600;
-    color: #203152;
+.information_header_buscador-input { 
     border: none;
 }
 
-.info-container-header-buscador:focus {
+.information_header_buscador-input:focus {
     outline: none;
     border: none;
 }
 
-.info-container-header-perfil {
-    display: flex;
-    flex-direction: row;
+
+.information_header_perfil {
+    flex-grow: 5;
+    flex-shrink: 0;
+    column-gap: 1px;
     align-items: center;
-    column-gap: 5px;
+    justify-content: flex-end;
 }
 
-.user-icon {
-    color: #33A5CC;
+.information_header_perfil_icon {
+    font-size: 30px;
 }
 
 
-.info-container-album-info {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    background-color: #EEF7FA;
-
- 
-
-    flex-grow: 0;
+.information_artist {
+    background-color: #EEF7FA;;
+    border-radius: 10px;
 }
 
-.info-container-album-info-imagen_container {
-    position: relative;
-    width: 270px;
-    height: 250px;
-    height: 100%;
+.information_artist_figure {
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
-.info-container-album-info-imagen{ 
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-}
-
-.info-container-album-info-detalles {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: 70%;
-}
-
-.triangle-big {
+.icon_play_artist{
     position: absolute;
-    color: white;
     font-size: 150px;
-    top: 20%;
-    left: 20%;
-    translate: (-50%,-50%);
-}
-.info-container-album-info-detalles-singer_name {
-    font-family: "Quicksand", serif;
-    font-size: 21px;
-    font-weight: 600;
 }
 
-.info-container-album-info-detalles-singer_info {
+.information_artist_figure-image {
+    object-fit: cover;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.information_artist_data {
+    flex-grow: 1;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.information_artist_data-singer{
+    width: max-content;
+
+}
+
+.information_artist_data_subtitle{
     column-gap: 20px;
-    font-family: "Quicksand", serif;
-    font-weight: 500;
+    width: max-content;
+    flex-grow: 1;
 }
 
-.info-container-album-info-detalles-singer_info-seguidores{
-    color: #33A5CC;
+.information_artist_data_subtitle-text {
+    width: max-content;
 }
 
-.info-container-album-info-detalles-singer_data {
-    font-family: "Quicksand", serif;
-    font-weight: 500;
+.information_artist_data_subtitle-followers{
+    width: max-content;
 }
 
-.info-container-album-info-detalles-buttons {
-    display: flex;
+.information_artist_data-description-text {
+    flex-grow: 1;
+}
+
+.information_artist_data_buttons{
     column-gap: 20px;
+    width: max-content;
 }
 
 .button-reproducir {
     background-color: #33A5CC;
     border-radius: 15px;
-    color: white;
     border: 1px #33A5CC solid;
     width: 136px;
     height: 38px;
@@ -143,7 +123,6 @@
     border: 1px #33A5CC solid;
     background-color: white;
     border-radius: 15px;
-    color: #33A5CC;
     width: 99px;
     height: 38px;
     font-size: 16px;
@@ -162,100 +141,42 @@
     cursor: pointer;
 }
 
-.info-container-adicional-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-
-}
-
-.info-container-adicional-info-title{
-    color:  #33A5CC;
-    font-size: 21px;
-    font-family: "Quicksand", serif;
-    font-style: normal;
-    font-weight: 500;
-}
-
-
-@media (max-width: 940px) {
-    
-
-    .info-container-header, .info-container-album-info,.info-container-adicional-info.info-container-adicional-info {
-        width: 95%;
-    }
-
-}
-/*
-@media (max-width: 946px) {
-    .info-container-album-info {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        border-radius: 15px;
-        background-color: #EEF7FA;
-    }
-    
-    .info-container-album-info-detalles {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        width: 70%;
-    }
-}
-*/
-
-
-/*
-
-@media (max-width: 1500px) {
-   .info-container {
-    padding-left: 60px;
-    padding-right: 60px;
-   }
-
-   .triangle-big {
-        font-size: 130px;
-        top: 20%;
-        left: 15%;
-        translate: (-50%,-50%);
-    }
-}
-
-@media (max-width: 1250px) {
-    .info-container {
-     padding-left: 80px;
-     padding-right: 80px;
-    }
-
-    .triangle-big {
-        font-size: 100px;
-        top: 50%;
-        left: 20%;
-        translate: (-50%,-50%);
-    }
+.information_resultados {
+    row-gap: 20px;
 }
 
 @media (max-width: 1000px) {
-    .info-container {
-     padding-left: 60px;
-     padding-right: 60px;
+    .information_artist {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .info-container-album-info {
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        border-radius: 15px;
-        background-color: #EEF7FA;
+    .information_artist_figure-image {
+        padding: 30px;
+
+    }
+    .information_resultados{
+        flex-grow: 0;
     }
     
- }
- 
- @media (max-width: 890px) {
-     .info-container {
-        padding-left: 80px;
-        padding-right: 80px;
-     }
- }*/
+}
+
+@media (max-width: 600px) {
+    .information {
+        padding: 20px;
+    
+    }
+
+    .information_artist_data{
+       width: 60%;
+    }
+
+    .information_artist_data_buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+

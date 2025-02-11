@@ -1,0 +1,30 @@
+/* .color-orange{
+    color: orange;
+} */
+
+.grid {
+    
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "sidebar contenido" "reproductor reproductor";
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 8fr 1fr;
+}
+  
+.sidebar {
+
+    grid-area: sidebar;
+}
+
+.contenido {
+
+    grid-area: contenido;
+}
+
+.reproductor{
+    grid-area: reproductor;
+}
+
+.color-font{
+    color: var(--color);
+}
