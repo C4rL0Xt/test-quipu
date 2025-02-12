@@ -19,10 +19,19 @@
         </section>
 
         <section class="reproductor_control_sound flex-row">
-            <div class="reproductor_control_sound-barra bg-color-terciary flex-row justify-align-center">
-                <div class="reproductor_control_sound-circle bg-color-terciary color-terciary"></div>
+            <div
+              class="reproductor_control_sound-barra bg-color-terciary flex-row justify-align-center"
+              (mousedown)="startDrag($event)"
+            >
+              <div
+                class="reproductor_control_sound-circle bg-color-terciary color-terciary"
+                [style.left.px]="circlePosition"
+                (mousedown)="startDrag($event)"
+              ></div>
             </div>
-            <span class="material-icons reproductor_control_sound-volume color-terciary">volume_up</span>
-        </section>
+            <span class="material-icons reproductor_control_sound-volume color-terciary">
+              volume_up
+            </span>
+          </section>
     </main>
 </div>

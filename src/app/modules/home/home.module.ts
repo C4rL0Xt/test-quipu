@@ -11,6 +11,7 @@ import { ArtistInfoComponent } from './components/artist-info/artist-info.compon
 import { ReproductorComponent } from './components/reproductor/reproductor.component';
 import { HijoComponent } from './components/encapsulation/hijo/hijo.component';
 import { PadreComponent } from './components/encapsulation/padre/padre.component';
+import { FormPageComponent } from './pages/form-page/form-page.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PadreComponent } from './components/encapsulation/padre/padre.component
     ArtistInfoComponent,
     ReproductorComponent,
     HijoComponent,
-    PadreComponent
+    PadreComponent,
+    FormPageComponent
   ],
   imports: [
     CommonModule,
